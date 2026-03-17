@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumos-Sync: Solar Reflector Alignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lumos-Sync</h1>
+            <p>Solar Reflector Alignment Tool</p>
+        </header>
+        <main>
+            <div id="leveler-container">
+                <svg id="leveler" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="90" fill="none" stroke="#001f3f" stroke-width="5"/>
+                    <circle cx="100" cy="100" r="5" fill="#ffd700"/>
+                    <circle id="bubble" cx="100" cy="100" r="10" fill="#ffd700"/>
+                </svg>
+            </div>
+            <div id="status">
+                <p id="status-text">Initializing...</p>
+                <p id="solar-info">Solar Position: Calculating...</p>
+            </div>
+            <button id="request-permission" style="display: none;">Enable Orientation Access</button>
+        </main>
+        <footer>
+            <p>Coimbatore, India | Real-time Solar Tracking</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
