@@ -141,3 +141,8 @@ function provideHapticFeedback() {
 if (!requestPermissionBtn.style.display || requestPermissionBtn.style.display === 'none') {
     initializeApp();
 }
+document.body.addEventListener('click', () => {
+    document.body.style.background = "linear-gradient(135deg, #064e3b 0%, #059669 100%)";
+    if (navigator.vibrate) navigator.vibrate(200);
+    alert("Target Synced: Max Efficiency!");
+});
